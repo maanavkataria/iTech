@@ -1,0 +1,137 @@
+@media only screen and (max-width: 1024px) {
+    .navbar .nav-list {
+        width: 50%;
+    }
+
+    .navbar .rightnav {
+        width: 30%;
+    }
+
+    #search {
+        width: 150px;
+    }
+
+    .btn-small {
+        width: 45px;
+        padding: 6px 2px;
+        font-size: 10px;
+    }
+
+    .logo img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .navbar {
+        height: 315px;
+        text-align: center;
+        transition: all 1s ease;
+    }
+
+    .navbar,
+    .navbar .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        text-align: center;
+        width: 30%;
+    }
+
+    .nav-list li {
+        padding: 0;
+    }
+
+    .rightnav .searchbar {
+        flex-direction: column;
+    }
+
+    .rightnav .searchbar .btn {
+        width: 70px;
+        font-size: 15px;
+    }
+
+    .navbar .logo {
+        width: 80%;
+        height: 80px;
+        text-align: left;
+    }
+
+    .logo img {
+        width: 15%;
+        height: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .h-nav-resp {
+        height: 75px;
+    }
+
+    .visible-resp {
+        opacity: 0;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .cover-image {
+        width: 80%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .contact form .form-tag {
+        width: 100%;
+    }
+
+    .contact form .form-button {
+        width: 100%;
+    }
+
+    .first-half {
+        gap: 0;
+        width: 60%;
+        margin: auto;
+    }
+
+    .first-half .heading {
+        font-size: 18px;
+    }
+
+    .first-half .text {
+        font-size: 12px;
+    }
+
+    .second-half img {
+        width: 100px;
+        border-radius: 90px;
+        display: block;
+        margin: 10px auto;
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .h-resp {
+        word-break: break-all;
+    }
+}

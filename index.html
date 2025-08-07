@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTech | Innovating Tech Eductaion</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link rel="icon" type="image/x-icon" href="images/logo_fav.png">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar background h-nav-resp">
+            <div class="logo" onclick="logo_load()">
+                <img src="images/logo_fav.png" alt="logo">
+            </div>
+            <ul class="nav-list visible-resp">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="rightnav visible-resp">
+                <div class="searchbar">
+                    <input type="text" name="search" id="search">
+                    <button class="btn btn-small">Search</button>
+                </div>
+            </div>
+            <div class="burger">
+                <div class="burger_line"></div>
+                <div class="burger_line"></div>
+                <div class="burger_line"></div>
+            </div>
+        </div>
+
+        <section class="background first-section" id="about">
+            <div class="main">
+                <div class="first-half">
+                    <h2 class="heading">🚀 Empowering the next Generation of I.T. Experts</h2>
+                    <p class="text">
+                        At iTech, we’re redefining the future of learning with hands-on, industry-relevant IT courses and diplomas. From coding and cybersecurity to software development and digital marketing, our mission is clear — Innovating Tech Education for a smarter, digital tomorrow.
+                    </p>
+                    <div class="buttons">
+                        <a href="learn.html"><button class="btn">Learn More</button></a>
+                        <a href="http://localhost/Coding/Higher%20Diploma%20Software%20Engineering%20-%20HDSE/Projects/Responsive%20Website/enroll.php"><button class="btn">Enroll Now</button></a>
+                    </div>
+                </div>
+
+                <div class="second-half">
+                    <img src="images/student.jpg" alt="Student">
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <section class="second-section" id="courses">
+            <div class="content">
+                <div class="context">
+                    <h2 class="heading h-resp">💻 Website Designing/Development</h2>
+                    <hr>
+                    <p class="text">
+                        Join our comprehensive Website Designing and Development course to learn how to build stunning, responsive websites from the ground up. This course covers everything from the basics of HTML, CSS, and JavaScript to advanced techniques in modern web design. Whether you're a student, beginner, or someone looking to grow your career, this course will help you gain real-world skills and hands-on experience.
+                    </p>
+                </div>
+                <div class="cover-image">
+                    <img src="images/web_dev.png" alt="Picture">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="content left-side">
+                <div class="context">
+                    <h2 class="heading">🧑‍💻 Freelancing</h2>
+                    <hr>
+                    <p class="text">
+                        Discover how to become a successful freelancer and work from anywhere with our detailed Freelancing course. This course covers everything from creating a professional profile to mastering top freelancing platforms like Fiverr, Upwork, and Freelancer. You’ll learn how to communicate with clients, price your Courses, manage projects, and build a long-term freelance career. Whether you're a student, beginner, or someone looking to earn online, this course will give you the tools and confidence to grow as an independent professional.
+                    </p>
+                </div>
+                <div class="cover-image">
+                    <img src="images/freelance.png" alt="Picture">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="content">
+                <div class="context">
+                    <h2 class="heading">🛒 E-Commerce</h2>
+                    <hr>
+                    <p class="text">
+                        Master the world of online business with our comprehensive E-Commerce course. Learn how to set up, manage, and grow successful online stores using platforms like Shopify, WooCommerce, and more. This course covers everything from product research, store design, and payment gateway integration to order management, customer service, and digital marketing strategies. Whether you're planning to launch your own store or offer E-Commerce Courses to clients, this course equips you with practical skills to succeed in the fast-growing online marketplace.
+                    </p>
+                </div>
+                <div class="cover-image">
+                    <img src="images/ecom.png" alt="Picture">
+                </div>
+            </div>
+        </section>
+
+        <br><br><br>
+        <hr class="line">
+
+        <section class="contact" id="contact">
+            <form>
+                <h2 class="heading">📞 Contact Us</h2>
+                <br>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name......" class="form-tag">
+                <br><br>
+                <input type="text" name="Phone" id="Phone" placeholder="Enter Your Phone Number......" class="form-tag">
+                <br><br>
+                <input type="email" name="email" id="email" placeholder="Enter Your E-Mail......" class="form-tag">
+                <br><br>
+                <textarea name="concern" id="concern" cols="30" rows="2" placeholder="Enter Your Concern......." class="form-tag"></textarea>
+                <br><br>
+                <button class="btn form-button">Submit</button>
+            </form> 
+        </section>
+
+        <footer class="background">
+            <p class="text">
+                Copyright &copy; 2025 iTech.com - All Rights Reserved. Designed by <strong>Maanav Kataria</strong>.
+            </p>
+        </footer>
+    </div>
+</body>
+
+<script src="./JS/responsive.js"></script>
+
+</html>
