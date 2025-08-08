@@ -1,3 +1,7 @@
+<?php
+include("connection.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +11,6 @@
     <title>iTech | Contact Us</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/responsive.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link rel="icon" type="image/x-icon" href="images/logo_fav.png">
 </head>
 
@@ -38,18 +40,18 @@
         </div>
 
         <section class="contact" id="contact">
-            <form>
+            <form method="post">
                 <h2 class="heading">📞 Contact Us</h2>
                 <br>
                 <input type="text" name="name" id="name" placeholder="Enter Your Name......" class="form-tag">
                 <br><br>
-                <input type="text" name="Phone" id="Phone" placeholder="Enter Your Phone Number......" class="form-tag">
+                <input type="tel" name="Phone" id="Phone" placeholder="Enter Your Phone Number......" class="form-tag">
                 <br><br>
                 <input type="email" name="email" id="email" placeholder="Enter Your E-Mail......" class="form-tag">
                 <br><br>
                 <textarea name="concern" id="concern" cols="30" rows="2" placeholder="Enter Your Concern......." class="form-tag"></textarea>
                 <br><br>
-                <button class="btn form-button">Submit</button>
+                <button class="btn form-button" name="btn">Submit</button>
             </form> 
         </section>
     </div>
@@ -57,3 +59,19 @@
 <script src="./JS/responsive.js"></script>
 
 </html>
+
+<?php
+if (isset($_POST['btn'])) {
+    $stdname = $_POST['name'];
+    $stdcontact = $_POST['Phone'];
+    $stdemail = $_POST['email'];
+    $stdconcern = $_POST['concern'];
+    $submit = mysqli_query($connection, "INSERT INTO `concerns`(`std_name`, `std_contact`, `std_email`, `std_concern`) VALUES ('$stdname','$stdcontact','$stdemail','$stdconcern')");
+    if ($submit) {
+        echo"<script>
+        alert('Information Submitted!');
+        location.assign('index.html');
+        </script>";
+    }
+}
+?>
